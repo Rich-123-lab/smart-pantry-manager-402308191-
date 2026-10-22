@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Smart Pantry Manager</string>
+
+    <!-- Pantry list -->
+    <string name="title_pantry">My Pantry</string>
+    <string name="empty_pantry">Your pantry is empty.\nTap + to add your first ingredient.</string>
+    <string name="cd_add_ingredient">Add ingredient</string>
+    <string name="expires_on">Expires %1$s</string>
+    <string name="expired_on">Expired %1$s</string>
+    <string name="no_expiry">No expiry date</string>
+
+    <!-- Add / edit ingredient -->
+    <string name="title_add_ingredient">Add ingredient</string>
+    <string name="title_edit_ingredient">Edit ingredient</string>
+    <string name="hint_name">Ingredient name</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="label_unit">Unit</string>
+    <string name="hint_expiry">Expiry date (optional)</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Validation errors -->
+    <string name="error_name_required">Please enter an ingredient name</string>
+    <string name="error_name_letters">The name must contain letters</string>
+    <string name="error_name_too_long">Keep the name under 40 characters</string>
+    <string name="error_quantity_required">Please enter a quantity</string>
+    <string name="error_quantity_invalid">Enter a number greater than 0</string>
+    <string name="error_quantity_too_big">That quantity is too large</string>
+
+    <!-- Feedback -->
+    <string name="toast_saved">Ingredient saved</string>
+    <string name="toast_updated">Ingredient updated</string>
+    <string name="toast_deleted">Ingredient deleted</string>
+    <string name="dialog_delete_title">Delete ingredient?</string>
+    <string name="dialog_delete_message">Remove %1$s from your pantry?</string>
 </resources>

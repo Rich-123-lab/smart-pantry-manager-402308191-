@@ -1,4 +1,4 @@
-package com.welsh.smartpantry;
+package com.Welsh.smartpantry;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -19,9 +19,9 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.welsh.smartpantry.data.AppDatabase;
-import com.welsh.smartpantry.data.PantryItem;
-import com.welsh.smartpantry.data.PantryItemDao;
+import com.Welsh.smartpantry.data.AppDatabase;
+import com.Welsh.smartpantry.data.PantryItem;
+import com.Welsh.smartpantry.data.PantryItemDao;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -34,7 +34,7 @@ import java.util.Date;
 public class AddEditIngredientActivity extends AppCompatActivity {
 
     /** Intent extra key: the id of the PantryItem to edit. */
-    public static final String EXTRA_ITEM_ID = "com.welsh.smartpantry.EXTRA_ITEM_ID";
+    public static final String EXTRA_ITEM_ID = "com.Welsh.smartpantry.EXTRA_ITEM_ID";
     private static final long NO_ID = -1L;
 
     private static final int MAX_NAME_LENGTH = 40;

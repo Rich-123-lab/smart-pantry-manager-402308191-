@@ -1,4 +1,4 @@
-package com.welsh.smartpantry;
+package com.Welsh.smartpantry;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;

@@ -1,4 +1,4 @@
-package com.welsh.smartpantry;
+package com.Welsh.smartpantry;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.color.MaterialColors;
-import com.welsh.smartpantry.data.PantryItem;
+import com.Welsh.smartpantry.data.PantryItem;
 
 import java.util.ArrayList;
 import java.util.List;

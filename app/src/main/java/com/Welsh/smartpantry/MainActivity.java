@@ -1,4 +1,4 @@
-package com.welsh.smartpantry;
+package com.Welsh.smartpantry;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.welsh.smartpantry.data.AppDatabase;
+import com.Welsh.smartpantry.data.AppDatabase;
 
 /**
  * Pantry List screen (launcher screen).

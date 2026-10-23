@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.Welsh.smartpantry.data.AppDatabase;
 
@@ -59,10 +60,20 @@ public class MainActivity extends AppCompatActivity {
         fabAdd.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, AddEditIngredientActivity.class)));
 
+        BottomNavigationView nav = findViewById(R.id.bottomNav);
+        NavHelper.setup(this, nav, R.id.nav_pantry);
+
         // READ: observe the pantry table; this runs now and after every change
         AppDatabase.getInstance(this).pantryItemDao().getAllLive().observe(this, items -> {
             adapter.setItems(items);
             textEmpty.setVisibility(items.isEmpty() ? View.VISIBLE : View.GONE);
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Picks up a change made on the Settings screen
+        adapter.setHighlightExpiring(AppPrefs.highlightExpiring(this));
     }
 }
